@@ -1,0 +1,191 @@
+*
+{
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  columns: #AFBFDB;
+
+}
+
+
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background-color: #AFBFDB ;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color:  #2E3E5C ;
+}
+
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #7198E1;
+  border-top: 5px solid #8995AB;
+  border-bottom: 5px solid #8995AB;
+}
+
+
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color: #AFBFDB;
+  color: #2E3E5C ;
+  padding: 20px;
+}
+
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color:#AFBFDB;
+  color: #2E3E5C ;
+  padding: 20px; 
+}
+
+.footer {
+    padding: 30px;
+    text-align: center;
+    background:#AFBFDB;
+    color: #2E3E5C ;
+  }
+  .showSlide {  
+    display: none  
+}  
+    .showSlide img {  
+        width: 100%;  
+    }  
+.slidercontainer {  
+    max-width: 300px;  
+    position: relative;  
+    margin: auto;  
+}  
+.left, .right {  
+    cursor: pointer;  
+    position: absolute;  
+    top: 50%;  
+    width: auto;  
+    
+    margin-top: -45px;  
+    color: #2E3E5C ;  
+    font-weight: bold;  
+    font-size: 20px;  
+    transition: 0.6s ease;  
+    border-radius: 0 4px 4px 0;  
+}  
+.right {  
+    right: 0;  
+    border-radius: 3px 0 0 3px;  
+}  
+    .left:hover, .right:hover {  
+        background-color: rgba(115, 115, 115, 0.8);  
+    }  
+.content {  
+  color: #2E3E5C ;  
+  font-size: 30px;  
+  font-weight: bold;
+  padding: 8px 12px;  
+  position: bottom;  
+  top: 10px;  
+  width: 100%;  
+  text-align: center;  
+}  
+.active {  
+  background-color: #717171;  
+}  
+/* Fading animation */  
+.fade {  
+  -webkit-animation-name: fade;  
+  -webkit-animation-duration: 1.5s;  
+  animation-name: fade;  
+  animation-duration: 1.5s;  
+}  
+@-webkit-keyframes fade {  
+  from {  
+      opacity: .4  
+  }  
+  to {  
+      opacity: 1  
+  }  
+}  
+
+@keyframes fade {  
+  from {  
+      opacity: .4  
+  }  
+  to {  
+      opacity: 1  
+  }  
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color:#49505C;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color:#49505C;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #7198E1;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #7198E1;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: #49505C;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #7198E1;
+  color: #2E3E5C;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
